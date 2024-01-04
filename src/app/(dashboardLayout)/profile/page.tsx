@@ -2,9 +2,9 @@ import React from "react";
 
 const ProfilePage = () => {
   return (
-    <div>
-      <h1>This is is my profile page</h1>
-    </div>
+    <section>
+      <h1>This is profile page</h1>
+    </section>
   );
 };
 
