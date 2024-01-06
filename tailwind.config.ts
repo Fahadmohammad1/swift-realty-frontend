@@ -9,10 +9,12 @@ const config: Config = {
   ],
   presets: [require("keep-react/preset")],
   theme: {
-    colors: {
-      primary: "#007BFF",
-      secondary: "#000000",
-      extra: "#00C853",
+    extend: {
+      colors: {
+        srPrimary: "#007BFF",
+        srSecondary: "#000000",
+        srExtra: "#00C853",
+      },
     },
   },
   plugins: [],
