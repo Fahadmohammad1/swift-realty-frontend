@@ -16,7 +16,7 @@ export const Header = () => {
 
           <Navbar.Container
             tag="ul"
-            className="lg:flex hidden items-center justify-between gap-[30px] text-[14px]"
+            className="lg:flex hidden items-center justify-between gap-[30px] text-[14px] ml-[103px]"
           >
             <Link href="/" className="text-[14px]">
               Home
