@@ -15,6 +15,9 @@ const config: Config = {
         srSecondary: "#000000",
         srExtra: "#00C853",
       },
+      fontFamily: {
+        primaryFont: ["Creato Display"],
+      },
     },
   },
   plugins: [],
