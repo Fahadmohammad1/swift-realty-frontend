@@ -35,15 +35,16 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="right-0 top-0 absolute">
+      <div className="right-0 top-0 absolute z-10">
         <Image
-          className="ml-10"
+          className="ml-10 z-0"
           src={banner}
           width={814}
           height={700}
           alt="banner"
         />
       </div>
+      <div className="w-full left-0 top-0 absolute border border-black border-opacity-30" />
     </section>
   );
 };
