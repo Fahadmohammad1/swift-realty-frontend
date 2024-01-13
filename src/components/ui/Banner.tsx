@@ -37,7 +37,7 @@ const Banner = () => {
       </div>
       <div className="right-0 top-0 absolute z-10">
         <Image
-          className="ml-10 z-0"
+          className="ml-10"
           src={banner}
           width={814}
           height={700}
