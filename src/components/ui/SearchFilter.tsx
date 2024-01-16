@@ -28,7 +28,7 @@ const SearchFilter = () => {
           </button>
           <input
             type="text"
-            placeholder="Location"
+            placeholder="Type"
             className="w-full p-5 bg-[#0000000D] text-[#BCBCBC] text-2xl font-semibold font-[Inter] rounded-lg"
           />
         </div>
@@ -38,7 +38,7 @@ const SearchFilter = () => {
           </button>
           <input
             type="text"
-            placeholder="Location"
+            placeholder="Budget"
             className="w-full p-5 bg-[#0000000D] text-[#BCBCBC] text-2xl font-semibold font-[Inter] rounded-lg"
           />
         </div>
