@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import currentLocation from "../../assets/images/current-location.png";
+import { IProperty } from "@/types";
 
-const PropertyCard = ({ property }: { property: React.ReactNode }) => {
+const PropertyCard = ({ property }: { property: IProperty }) => {
   const { location, price, image } = property;
   return (
     <div className="max-w-[405px] shadow-md mt-[50px] rounded-xl mx-auto border border-srPrimary">

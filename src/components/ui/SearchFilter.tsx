@@ -6,8 +6,8 @@ import chart from "../../assets/images/chart-pie.png";
 
 const SearchFilter = () => {
   return (
-    <div className="w-[1120px] h-[246px] relative mx-auto z-30">
-      <div className="w-[1120px] h-[246px] left-0 top-0 absolute bg-[#FCFCFF] rounded-xl shadow" />
+    <div className="w-[1120px] h-[246px] relative mx-auto z-30 bg-[#FCFCFF] shadow-md rounded-xl">
+      <div className="w-[1120px] h-[246px] left-0 top-0 absolute" />
       <div className="left-[33px] top-[46px] absolute text-black text-4xl font-semibold font-['Inter']">
         Search the price you looking for
       </div>
