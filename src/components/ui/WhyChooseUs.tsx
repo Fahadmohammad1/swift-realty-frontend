@@ -6,6 +6,7 @@ import clock from "../../assets/images/clock.png";
 import insurance from "../../assets/images/insurance.png";
 import custom from "../../assets/images/pen-paper.png";
 import line from "../../assets/images/Line.png";
+import bg from "../../assets/images/background.png";
 
 const WhyChooseUs = () => {
   const qualities = [
@@ -44,7 +45,7 @@ const WhyChooseUs = () => {
         Why Choose Us
       </h1>
       <div className="w-[100px] border-[3px] border-srPrimary mx-auto mt-4 rounded-sm" />
-      <div className="lg:grid grid-cols-2 mt-[50px]">
+      <div className="lg:grid grid-cols-2 mt-[50px] gap-[30px]">
         <div>
           <h3 className="text-4xl font-bold font-[Creato Display] text-srPrimary mt-5">
             Why Choose Swift Realty
@@ -65,7 +66,9 @@ const WhyChooseUs = () => {
                 <p className="text-[20px] font-bold font-[Creato Display]">
                   {q.title}
                 </p>
-                <p className="text-xs font-normal">{q.description}</p>
+                <p className="text-xs font-normal text-justify">
+                  {q.description}
+                </p>
               </div>
             </div>
           ))}
@@ -79,6 +82,23 @@ const WhyChooseUs = () => {
             height={580}
             alt="choose-us-banner"
           />
+        </div>
+      </div>
+      <div className="bg-srPrimary mt-[100px] bg-opacity-90">
+        <div className="max-w-[800px] mx-auto">
+          <h3 className="text-center text-white text-4xl font-bold font-[Creato Display] pt-[50px]">
+            Ready to Find Your Dream Home?
+          </h3>
+          <div className="relative mt-5 w-full mx-auto flex items-center pb-[87px]">
+            <button className="text-white bg-srPrimary absolute right-3 px-[54px] py-[18px] rounded">
+              Submit Now
+            </button>
+            <input
+              type="text"
+              placeholder="Your Email Address....."
+              className="w-full p-5 text-[#BCBCBC] text-2xl font-normal font-[Inter] rounded italic"
+            />
+          </div>
         </div>
       </div>
     </section>
