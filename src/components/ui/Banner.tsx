@@ -44,7 +44,7 @@ const Banner = () => {
           alt="banner"
         />
       </div>
-      <div className="w-full left-0 top-0 absolute border border-black border-opacity-30" />
+      {/* <div className="w-full left-0 top-0 absolute border border-black border-opacity-30" /> */}
     </section>
   );
 };

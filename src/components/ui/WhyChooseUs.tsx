@@ -41,47 +41,49 @@ const WhyChooseUs = () => {
   ];
   return (
     <section className="mt-[100px]">
-      <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
-        Why Choose Us
-      </h1>
-      <div className="w-[100px] border-[3px] border-srPrimary mx-auto mt-4 rounded-sm" />
-      <div className="lg:grid grid-cols-2 mt-[50px] gap-[30px]">
-        <div>
-          <h3 className="text-4xl font-bold font-[Creato Display] text-srPrimary mt-5">
-            Why Choose Swift Realty
-          </h3>
-          {qualities.map((q) => (
-            <div key={q.id} className="flex mt-[50px]">
-              <div className="w-20 h-20 flex items-center">
-                <Image src={q.image} width={60} height={60} alt="icon" />
+      <div className="container mx-auto">
+        <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
+          Why Choose Us
+        </h1>
+        <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
+        <div className="lg:grid grid-cols-2 mt-[50px] gap-[30px]">
+          <div>
+            <h3 className="text-4xl font-bold font-[Creato Display] text-srPrimary mt-5">
+              Why Choose Swift Realty
+            </h3>
+            {qualities.map((q) => (
+              <div key={q.id} className="flex mt-[50px]">
+                <div className="w-20 h-20 flex items-center">
+                  <Image src={q.image} width={60} height={60} alt="icon" />
+                </div>
+                <Image
+                  className="mr-[15px] ml-[30px]"
+                  src={line}
+                  width={0}
+                  height={80}
+                  alt="line"
+                />
+                <div>
+                  <p className="text-[20px] font-bold font-[Creato Display]">
+                    {q.title}
+                  </p>
+                  <p className="text-xs font-normal text-justify">
+                    {q.description}
+                  </p>
+                </div>
               </div>
-              <Image
-                className="mr-[15px] ml-[30px]"
-                src={line}
-                width={0}
-                height={80}
-                alt="line"
-              />
-              <div>
-                <p className="text-[20px] font-bold font-[Creato Display]">
-                  {q.title}
-                </p>
-                <p className="text-xs font-normal text-justify">
-                  {q.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div>
-          <Image
-            className="h-full"
-            style={{ borderRadius: "80px 0px 80px 0px" }}
-            src={banner}
-            width={650}
-            height={580}
-            alt="choose-us-banner"
-          />
+            ))}
+          </div>
+          <div>
+            <Image
+              className="h-full"
+              style={{ borderRadius: "80px 0px 80px 0px" }}
+              src={banner}
+              width={650}
+              height={580}
+              alt="choose-us-banner"
+            />
+          </div>
         </div>
       </div>
       <div

@@ -11,11 +11,11 @@ const FeaturedPoperties = () => {
     { id: 3, location: "Dhaka, Bangladesh", price: 2000, image: propery3 },
   ];
   return (
-    <section className="mt-[100px]">
+    <section className="mt-[100px] container mx-auto">
       <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Featured Properties
       </h1>
-      <div className="w-[100px] border-[3px] border-srPrimary mx-auto mt-4 rounded-sm" />
+      <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
       <div className="lg:grid grid-cols-3">
         {properties.map((property) => (
           <PropertyCard key={property.id} property={property} />
