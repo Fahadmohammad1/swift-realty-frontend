@@ -84,7 +84,14 @@ const WhyChooseUs = () => {
           />
         </div>
       </div>
-      <div className="bg-srPrimary mt-[100px] bg-opacity-90">
+      <div
+        style={{
+          background: `linear-gradient(rgba(0, 123, 255, 0.9), rgba(0, 123, 255, 0.9)), url(${bg.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+        }}
+        className="mt-[100px] bg-opacity-90"
+      >
         <div className="max-w-[800px] mx-auto">
           <h3 className="text-center text-white text-4xl font-bold font-[Creato Display] pt-[50px]">
             Ready to Find Your Dream Home?
