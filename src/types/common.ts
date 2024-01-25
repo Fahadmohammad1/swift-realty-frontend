@@ -6,3 +6,10 @@ export interface IProperty {
   price: number;
   image: StaticImageData;
 }
+
+export interface IMember {
+  id: string;
+  name: string;
+  designation: string;
+  image: StaticImageData;
+}
