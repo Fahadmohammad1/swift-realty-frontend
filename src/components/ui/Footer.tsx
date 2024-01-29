@@ -32,7 +32,7 @@ const Footer = () => {
             height={38}
             alt="logo"
           />
-          <p className="mb-[30px] text-justify text-base font-normal text-white">
+          <p className="mb-[30px] text-base font-normal text-white">
             We are term of designers and developers create high quality Magento,
             Presentation.
           </p>

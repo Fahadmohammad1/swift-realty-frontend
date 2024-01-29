@@ -4,7 +4,7 @@ import banner from "../../assets/images/banner.png";
 
 const Banner = () => {
   return (
-    <section className="w-[1440px] h-screen relative lg:flex items-center">
+    <section className="h-screen relative lg:flex items-center">
       <div className="left-0 absolute flex items-center mb-36">
         <div className="leading-[62px]">
           <span className="text-black text-[64px] font-bold font-['Creato Display']">
@@ -35,7 +35,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="right-0 top-0 absolute z-10">
+      <div className="right-0 top-0 absolute z-10 -mr-[35px]">
         <Image
           className="ml-10"
           src={banner}
