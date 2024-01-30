@@ -1,5 +1,6 @@
 import AboutUs from "@/components/ui/AboutUs";
 import Banner from "@/components/ui/Banner";
+import ContactUs from "@/components/ui/ContactUs";
 import FeaturedPoperties from "@/components/ui/FeaturedPoperties";
 import LatestBlog from "@/components/ui/LatestBlog";
 import SearchFilter from "@/components/ui/SearchFilter";
@@ -20,6 +21,7 @@ export default function Home() {
       <TeamInfo />
       <AboutUs />
       <LatestBlog />
+      <ContactUs />
     </main>
   );
 }
