@@ -24,7 +24,7 @@ const ContactUs = () => {
           <h3 className="text-4xl font-bold font-[Creato Display]">
             Easy to contact with us
           </h3>
-          <p className="mt-[10px] text-justify">
+          <p className="mt-[10px] text-justify text-[#757575]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry standard dummy text ever
             since the 1500s, when an unknown printer took a galley of type and

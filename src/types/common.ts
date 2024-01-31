@@ -13,3 +13,11 @@ export interface IMember {
   designation: string;
   image: StaticImageData;
 }
+
+export interface IBlog {
+  id: string;
+  title: string;
+  date: string;
+  description: string;
+  image: StaticImageData;
+}
