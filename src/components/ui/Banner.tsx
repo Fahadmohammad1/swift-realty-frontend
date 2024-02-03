@@ -24,7 +24,7 @@ const Banner = () => {
         </div>
         <div className="w-40 h-[58px] left-0 top-[256px] absolute">
           <div className="w-40 h-[58px] left-0 top-0 absolute bg-blue-600 rounded" />
-          <div className="left-[40px] top-[20px] absolute text-white text-base font-extrabold font-['Creato Display']">
+          <div className="left-[40px] top-[20px] absolute text-white text-base font-extrabold font-['Creato Display'] flex items-center">
             Explore All
           </div>
         </div>
