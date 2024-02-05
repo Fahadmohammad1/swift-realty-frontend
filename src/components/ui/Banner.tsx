@@ -21,17 +21,13 @@ const Banner = () => {
           industry. Lorem Ipsum has been the industrys standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
-        </div>
-        <div className="w-40 h-[58px] left-0 top-[256px] absolute">
-          <div className="w-40 h-[58px] left-0 top-0 absolute bg-blue-600 rounded" />
-          <div className="left-[40px] top-[20px] absolute text-white text-base font-extrabold font-['Creato Display'] flex items-center">
-            Explore All
-          </div>
-        </div>
-        <div className="w-[180px] h-[58px] left-[180px] top-[256px] absolute">
-          <div className="w-[180px] h-[58px] left-0 top-0 absolute rounded border-2 border-srPrimary hover:bg-srPrimary " />
-          <div className="left-[34px] top-[20px] absolute text-srPrimary text-base font-extrabold font-['Creato Display'] ">
-            Search Nearby
+          <div className="mt-[30px]">
+            <button className="bg-srPrimary text-white px-[40px] py-5 rounded font-extrabold text-base font-[Creato Display] mr-5">
+              Explore All
+            </button>
+            <button className="text-srPrimary px-[38px] py-[18px] border-[2px] border-srPrimary rounded font-extrabold text-base font-[Creato Display]">
+              Search Nearby
+            </button>
           </div>
         </div>
       </div>
@@ -44,7 +40,6 @@ const Banner = () => {
           alt="banner"
         />
       </div>
-      {/* <div className="w-full left-0 top-0 absolute border border-black border-opacity-30" /> */}
     </section>
   );
 };
