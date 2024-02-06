@@ -1,7 +1,7 @@
 import React from "react";
-import banner from "../../assets/images/about-banner.png";
+import banner from "@/assets/images/about-banner.png";
 import Image from "next/image";
-import check from "../../assets/images/circle-check.png";
+import check from "@/assets/images/circle-check.png";
 
 const AboutUs = () => {
   const aboutData = [

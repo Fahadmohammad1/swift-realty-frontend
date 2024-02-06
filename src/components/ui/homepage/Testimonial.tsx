@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import user from "../../assets/images/user1.png";
+import user from "@/assets/images/user1.png";
 import { Rating } from "keep-react";
 
 const Testimonial = () => {

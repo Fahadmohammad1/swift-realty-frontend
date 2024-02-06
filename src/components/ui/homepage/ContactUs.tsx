@@ -1,9 +1,9 @@
 import React from "react";
-import banner from "../../assets/images/contact-us-banner.png";
-import phone from "../../assets/images/phone.png";
-import mail from "../../assets/images/mail.png";
-import camera from "../../assets/images/camera.png";
-import chat from "../../assets/images/chat.png";
+import banner from "@/assets/images/contact-us-banner.png";
+import phone from "@/assets/images/phone.png";
+import mail from "@/assets/images/mail.png";
+import camera from "@/assets/images/camera.png";
+import chat from "@/assets/images/chat.png";
 import Image from "next/image";
 
 const ContactUs = () => {

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import banner from "../../assets/images/choose-us-banner.png";
-import building from "../../assets/images/building.png";
-import clock from "../../assets/images/clock.png";
-import insurance from "../../assets/images/insurance.png";
-import custom from "../../assets/images/pen-paper.png";
-import line from "../../assets/images/Line.png";
-import bg from "../../assets/images/background.png";
+import banner from "@/assets/images/choose-us-banner.png";
+import building from "@/assets/images/building-icon.png";
+import clock from "@/assets/images/clock.png";
+import insurance from "@/assets/images/insurance.png";
+import custom from "@/assets/images/pen-paper.png";
+import line from "@/assets/images/Line.png";
+import bg from "@/assets/images/background.png";
 
 const WhyChooseUs = () => {
   const qualities = [

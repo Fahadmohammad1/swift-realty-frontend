@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Navbar } from "keep-react";
-import logo from "../../assets/images/Logo.png";
+import logo from "@/assets/images/Logo.png";
 import Link from "next/link";
 
 export const Header = () => {

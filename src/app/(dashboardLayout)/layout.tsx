@@ -1,4 +1,4 @@
-import { Sider } from "@/components/ui/Sider";
+import { Sider } from "@/components/ui/homepage/Sider";
 import React from "react";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {

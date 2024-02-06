@@ -1,8 +1,8 @@
 import React from "react";
 import PropertyCard from "./PropertyCard";
-import propery1 from "../../assets/images/property-1.png";
-import propery2 from "../../assets/images/property-2.png";
-import propery3 from "../../assets/images/property-3.png";
+import propery1 from "@/assets/images/property-1.png";
+import propery2 from "@/assets/images/property-2.png";
+import propery3 from "@/assets/images/property-3.png";
 
 const FeaturedPoperties = () => {
   const properties = [

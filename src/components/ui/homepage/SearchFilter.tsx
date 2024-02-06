@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import location from "../../assets/images/map-pin.png";
-import home from "../../assets/images/home-2.png";
-import chart from "../../assets/images/chart-pie.png";
+import location from "@/assets/images/map-pin.png";
+import home from "@/assets/images/home-2.png";
+import chart from "@/assets/images/chart-pie.png";
 
 const SearchFilter = () => {
   return (

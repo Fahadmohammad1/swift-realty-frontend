@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import BlogCard from "./BlogCard";
-import blog1 from "../../assets/images/blog-1.png";
-import blog2 from "../../assets/images/blog-2.png";
-import blog3 from "../../assets/images/blog-3.png";
+import blog1 from "@/assets/images/blog-1.png";
+import blog2 from "@/assets/images/blog-2.png";
+import blog3 from "@/assets/images/blog-3.png";
 import Image from "next/image";
 
 const LatestBlog = () => {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import currentLocation from "../../assets/images/current-location.png";
+import currentLocation from "@/assets/images/current-location.png";
 import { IProperty } from "@/types";
 
 const PropertyCard = ({ property }: { property: IProperty }) => {

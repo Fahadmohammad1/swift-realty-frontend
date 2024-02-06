@@ -1,7 +1,7 @@
 import React from "react";
-import member1 from "../../assets/images/member1.png";
-import member2 from "../../assets/images/member2.png";
-import member3 from "../../assets/images/member3.png";
+import member1 from "@/assets/images/member1.png";
+import member2 from "@/assets/images/member2.png";
+import member3 from "@/assets/images/member3.png";
 import ProfileCard from "./ProfileCard";
 
 const TeamInfo = () => {

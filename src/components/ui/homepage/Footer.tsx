@@ -1,15 +1,15 @@
 import React from "react";
-import logo from "../../assets/images/Logo-2.png";
 import Image from "next/image";
-import footerBg from "../../assets/images/footer-bg.png";
-import instagram from "../../assets/images/Instagram.png";
-import twitter from "../../assets/images/Twitter.png";
-import linkedin from "../../assets/images/Linkedin.png";
-import facebook from "../../assets/images/Facebook.png";
-import copyright from "../../assets/images/copyright.png";
-import map from "../../assets/images/map.png";
+import logo from "@/assets/images/Logo-2.png";
+import footerBg from "@/assets/images/footer-bg.png";
+import instagram from "@/assets/images/Instagram.png";
+import twitter from "@/assets/images/Twitter.png";
+import linkedin from "@/assets/images/Linkedin.png";
+import facebook from "@/assets/images/Facebook.png";
+import copyright from "@/assets/images/copyright.png";
+import map from "@/assets/images/map.png";
 import Link from "next/link";
-import mapPin from "../../assets/images/map-pin-filled.png";
+import mapPin from "@/assets/images/map-pin-filled.png";
 
 const Footer = () => {
   const socialLogos = [instagram, twitter, linkedin, facebook];
