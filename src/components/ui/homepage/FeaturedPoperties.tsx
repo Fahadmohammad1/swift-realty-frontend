@@ -16,7 +16,7 @@ const FeaturedPoperties = () => {
         Featured Properties
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
-      <div className="lg:grid grid-cols-3">
+      <div className="lg:grid grid-cols-3 gap-5">
         {properties.map((property) => (
           <PropertyCard key={property.id} property={property} />
         ))}
