@@ -9,6 +9,7 @@ import propery1 from "@/assets/images/property-1.png";
 import propery2 from "@/assets/images/property-2.png";
 import propery3 from "@/assets/images/property-3.png";
 import PropertyCard from "@/components/ui/homepage/PropertyCard";
+import EmailForm from "@/components/ui/shared/EmailForm";
 
 const PropertiesPage = () => {
   const properties = [
@@ -26,9 +27,9 @@ const PropertiesPage = () => {
     { id: 12, location: "Dhaka, Bangladesh", price: 2000, image: propery3 },
   ];
   return (
-    <div>
+    <section className="mb-[40px]">
       <DynamicBanner title="Properties" />
-      <div className="container mx-auto mt-[100px]">
+      <div className="container mx-auto mt-[100px] mb-[60px]">
         <div className="flex justify-between items-center">
           <p className="text-2xl">Showing 12 results</p>
           <div className="flex items-center gap-8">
@@ -47,13 +48,15 @@ const PropertiesPage = () => {
             <VscSettings className="w-8 h-8" />
           </div>
         </div>
-        <div className="lg:grid grid-cols-3 gap-5">
+        <div className="lg:grid grid-cols-3 gap-x-5 gap-y-[32px] mt-[43px]">
           {properties.map((property) => (
             <PropertyCard key={property.id} property={property} />
           ))}
         </div>
+        <p className="text-[#757575] text-2xl mt-[30px]">Showing all results</p>
       </div>
-    </div>
+      <EmailForm />
+    </section>
   );
 };
 

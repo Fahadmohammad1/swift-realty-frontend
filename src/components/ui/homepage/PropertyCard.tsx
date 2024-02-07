@@ -6,7 +6,7 @@ import { IProperty } from "@/types";
 const PropertyCard = ({ property }: { property: IProperty }) => {
   const { location, price, image } = property;
   return (
-    <div className="w-full shadow-md mt-[50px] rounded-xl mx-auto border border-srPrimary">
+    <div className="w-full shadow-md rounded-xl mx-auto border border-srPrimary">
       <Image
         width={405}
         height={320}

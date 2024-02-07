@@ -6,7 +6,7 @@ import clock from "@/assets/images/clock.png";
 import insurance from "@/assets/images/insurance.png";
 import custom from "@/assets/images/pen-paper.png";
 import line from "@/assets/images/Line.png";
-import bg from "@/assets/images/background.png";
+import EmailForm from "../shared/EmailForm";
 
 const WhyChooseUs = () => {
   const qualities = [
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
   ];
   return (
     <section className="mt-[100px]">
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-[100px]">
         <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
           Why Choose Us
         </h1>
@@ -86,30 +86,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-      <div
-        style={{
-          background: `linear-gradient(rgba(0, 123, 255, 0.9), rgba(0, 123, 255, 0.9)), url(${bg.src})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100%",
-        }}
-        className="mt-[100px] bg-opacity-90"
-      >
-        <div className="max-w-[800px] mx-auto">
-          <h3 className="text-center text-white text-4xl font-bold font-[Creato Display] pt-[50px]">
-            Ready to Find Your Dream Home?
-          </h3>
-          <div className="relative mt-5 w-full mx-auto flex items-center pb-[87px]">
-            <button className="text-white bg-srPrimary absolute right-3 px-[54px] py-[18px] rounded">
-              Submit Now
-            </button>
-            <input
-              type="text"
-              placeholder="Your Email Address....."
-              className="w-full p-5 text-[#BCBCBC] text-2xl font-normal font-[Inter] rounded italic"
-            />
-          </div>
-        </div>
-      </div>
+      <EmailForm />
     </section>
   );
 };

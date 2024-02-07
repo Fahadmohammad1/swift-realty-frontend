@@ -14,7 +14,7 @@ import mapPin from "@/assets/images/map-pin-filled.png";
 const Footer = () => {
   const socialLogos = [instagram, twitter, linkedin, facebook];
   return (
-    <section className="mt-[60px]">
+    <section>
       <div
         style={{
           background: `linear-gradient(rgba(1, 19, 38, 0.9), rgba(1, 19, 38, 0.9)), url(${footerBg.src})`,
