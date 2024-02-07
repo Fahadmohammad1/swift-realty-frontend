@@ -14,7 +14,7 @@ const ContactUs = () => {
     { id: "4", text: "Feel free to chat with us", icon: chat },
   ];
   return (
-    <section className="mt-[50px] container mx-auto">
+    <section className="mt-[50px] container mx-auto mb-[60px]">
       <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Contact Us
       </h1>

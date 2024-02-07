@@ -15,7 +15,7 @@ const FeaturedPoperties = () => {
       <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Featured Properties
       </h1>
-      <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
+      <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm mb-[50px]" />
       <div className="lg:grid grid-cols-3 gap-5">
         {properties.map((property) => (
           <PropertyCard key={property.id} property={property} />
