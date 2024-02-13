@@ -1,3 +1,4 @@
+"use client";
 import DynamicBanner from "@/components/ui/shared/DynamicBanner";
 import React from "react";
 import { CiCalendarDate } from "react-icons/ci";
@@ -7,6 +8,8 @@ import { FiPlusCircle } from "react-icons/fi";
 import Image from "next/image";
 import property1 from "@/assets/images/property-details-1.png";
 import { TbCurrentLocation } from "react-icons/tb";
+import owner1 from "@/assets/images/owner1.png";
+import { Rating, TextInput, Textarea } from "keep-react";
 
 const PropertyDetails = () => {
   return (
@@ -74,6 +77,11 @@ const PropertyDetails = () => {
             </p>
           </div>
         </div>
+
+        {
+          // property details part
+        }
+
         <div className="lg:grid grid-cols-2 mt-[60px]">
           <div>
             <h4 className="text-[28px] font-medium mb-[30px]">
@@ -218,6 +226,87 @@ const PropertyDetails = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {
+          // owner part
+        }
+
+        <div className="mt-10">
+          <h4 className="font-medium text-[28px]">Owner Details</h4>
+          <div className="flex ">
+            <div className="lg:flex gap-5 items-center">
+              <div className="border border-srPrimary w-full rounded">
+                <Image
+                  className="p-[5px] rounded-sm w-full"
+                  src={owner1}
+                  width={106}
+                  height={98}
+                  alt="avatar"
+                />
+              </div>
+              <div>
+                <h4 className="font-bold text-xl text-srPrimary">
+                  David Rechardo
+                </h4>
+                <p className="text-xs font-normal text-mutedText mt-[2px]">
+                  Traveler/Photographer
+                </p>
+                <Rating size={14} className="mt-2">
+                  <Rating.Star color="#00C853" filledType="fill" />
+                  <Rating.Star color="#00C853" filledType="fill" />
+                  <Rating.Star color="#00C853" filledType="fill" />
+                  <Rating.Star color="#00C853" filledType="fill" />
+                  <Rating.Star color="#00C853" filledType="fill" />
+                  <span className="text-srExtra text-xs font-bold">[5.0]</span>
+                </Rating>
+              </div>
+            </div>
+            <div className="w-[1px] border mx-5" />
+            <div>
+              <p className="text-mutedText text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industrys standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {
+          // form part
+        }
+
+        <div className="mt-[60px]">
+          <div className="shadow-md p-[30px] flex flex-col gap-y-5">
+            <h5 className="text-2xl font-bold">Send Message For Book</h5>
+            <TextInput id="name" type="text" placeholder="Name" color="gray" />
+            <TextInput
+              id="email"
+              type="email"
+              placeholder="Email"
+              color="gray"
+            />
+            <Textarea
+              id="message"
+              placeholder="Message"
+              withBg={true}
+              color="gray"
+              border={true}
+              rows={4}
+            />
+            <button className="bg-srPrimary text-white px-8 py-5 rounded-[2px] text-base font-bold font-[Creato Display]">
+              Send Now
+            </button>
           </div>
         </div>
       </div>
