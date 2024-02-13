@@ -14,6 +14,7 @@ const config: Config = {
         srPrimary: "#007BFF",
         srSecondary: "#000000",
         srExtra: "#00C853",
+        mutedText: "#757575",
       },
       fontFamily: {
         primaryFont: ["Creato Display"],
