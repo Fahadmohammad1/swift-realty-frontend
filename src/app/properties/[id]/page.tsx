@@ -8,73 +8,13 @@ import { FiPlusCircle } from "react-icons/fi";
 import Image from "next/image";
 import property1 from "@/assets/images/property-details-1.png";
 import { TbCurrentLocation } from "react-icons/tb";
-import owner1 from "@/assets/images/owner1.png";
-import { Rating } from "keep-react";
-import rightArrow from "@/assets/images/right-arrow.png";
-import property4 from "@/assets/images/property-4.png";
-import property5 from "@/assets/images/property-5.png";
-import property6 from "@/assets/images/property-6.png";
-import property7 from "@/assets/images/property-7.png";
-import map from "@/assets/images/map-2.png";
-import mapPin from "@/assets/images/map-pin-filled.png";
-import instagram from "@/assets/images/Instagram-2.png";
-import twitter from "@/assets/images/Twitter-2.png";
-import linkedin from "@/assets/images/Linkedin-2.png";
-import facebook from "@/assets/images/Facebook-2.png";
+import DetailsAndAmenities from "@/components/ui/propertyDetails/DetailsAndAmenities";
+import OwnerDetails from "@/components/ui/propertyDetails/OwnerDetails";
+import CallToAction from "@/components/ui/propertyDetails/CallToAction";
+import LocationAndTags from "@/components/ui/propertyDetails/LocationAndTags";
+import Review from "@/components/ui/propertyDetails/Review";
 
 const PropertyDetails = () => {
-  const categories = [
-    "Apartment (14)",
-    "Picture Studio (08)",
-    "Luxury Vila (14)",
-    "Office (05)",
-    "Apartment (12)",
-  ];
-
-  const properties = [
-    {
-      id: "1",
-      price: 400,
-      image: property4,
-      name: "Luxumburg New Luxury Vila",
-      location: "Dhaka, Bangladesh",
-    },
-    {
-      id: "2",
-      image: property5,
-      price: 400,
-      name: "Luxumburg New Luxury Vila",
-      location: "Dhaka, Bangladesh",
-    },
-    {
-      id: "3",
-      image: property6,
-      price: 400,
-      name: "Luxumburg New Luxury Vila",
-      location: "Dhaka, Bangladesh",
-    },
-    {
-      id: "4",
-      image: property7,
-      price: 400,
-      name: "Luxumburg New Luxury Vila",
-      location: "Dhaka, Bangladesh",
-    },
-  ];
-
-  const tags = [
-    "Business",
-    "Office",
-    "Organic",
-    "Duplex",
-    "Business",
-    "Office",
-    "Organic",
-    "Duplex",
-  ];
-
-  const socialLogos = [instagram, twitter, linkedin, facebook];
-
   return (
     <section>
       <DynamicBanner title="Property Details" />
@@ -142,338 +82,29 @@ const PropertyDetails = () => {
         </div>
 
         {
-          // property details part
+          // property details and amenities
         }
-
-        <div className="lg:grid grid-cols-2 mt-[60px]">
-          <div>
-            <h4 className="text-[28px] font-medium mb-[30px]">
-              Property Details
-            </h4>
-            <div className="">
-              <div className="flex text-mutedText text-xl font-normal">
-                <div className="flex gap-[50px]">
-                  <div>
-                    <div className="mb-5">
-                      <p>Property ID:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Home Area</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Rooms</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Baths</p>
-                    </div>
-                  </div>
-
-                  <div className="w-fit">
-                    <div className="mb-5">
-                      <p>AZ20</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>120sqft</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>7</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>2</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-[1px] border mx-[61px]" />
-                <div className="flex gap-[50px]">
-                  <div>
-                    <div className="mb-5">
-                      <p>Property ID:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Home Area</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Rooms</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Baths</p>
-                    </div>
-                  </div>
-                  <div className="w-fit">
-                    <div className="mb-5">
-                      <p>AZ20</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>120sqft</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>7</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>2</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h4 className="text-[28px] font-medium mb-[30px] lg:ml-[106px]">
-              Amenities
-            </h4>
-            <div>
-              <div className="flex text-mutedText text-xl font-normal justify-end">
-                <div className="flex gap-[50px]">
-                  <div className="text-srPrimary">
-                    <div className="mb-5">
-                      <p>AC:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Gym:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Swimming Pool:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Wifi:</p>
-                    </div>
-                  </div>
-
-                  <div className="w-fit">
-                    <div className="mb-5">
-                      <p>Yes</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>No</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>No</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Yes</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="w-[1px] border mx-[61px]" />
-                <div className="flex gap-[50px]">
-                  <div className="text-srPrimary">
-                    <div className="mb-5">
-                      <p>BBQ:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Bathup:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Washer:</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Fireplace:</p>
-                    </div>
-                  </div>
-
-                  <div className="w-fit">
-                    <div className="mb-5">
-                      <p>Yes</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>No</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>No</p>
-                    </div>
-                    <div className="mb-5">
-                      <p>Yes</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <DetailsAndAmenities />
 
         {
           // owner part
         }
-
-        <div className="mt-10">
-          <h4 className="font-medium text-[28px]">Owner Details</h4>
-          <div className="flex ">
-            <div className="lg:flex gap-5 items-center">
-              <div className="border border-srPrimary w-full rounded">
-                <Image
-                  className="p-[5px] rounded-sm w-full"
-                  src={owner1}
-                  width={106}
-                  height={98}
-                  alt="avatar"
-                />
-              </div>
-              <div>
-                <h4 className="font-bold text-xl text-srPrimary">
-                  David Rechardo
-                </h4>
-                <p className="text-xs font-normal text-mutedText mt-[2px]">
-                  Traveler/Photographer
-                </p>
-                <Rating size={14} className="mt-2">
-                  <Rating.Star color="#00C853" filledType="fill" />
-                  <Rating.Star color="#00C853" filledType="fill" />
-                  <Rating.Star color="#00C853" filledType="fill" />
-                  <Rating.Star color="#00C853" filledType="fill" />
-                  <Rating.Star color="#00C853" filledType="fill" />
-                  <span className="text-srExtra text-xs font-bold">[5.0]</span>
-                </Rating>
-              </div>
-            </div>
-            <div className="w-[1px] border mx-5" />
-            <div>
-              <p className="text-mutedText text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </p>
-            </div>
-          </div>
-        </div>
+        <OwnerDetails />
 
         {
-          // message to book
+          // message to book, top categories, latest properties
         }
-
-        <div className="mt-[60px] lg:flex gap-x-[25px]">
-          <div className="shadow-md p-[30px] flex flex-col gap-y-5 w-full">
-            <h5 className="text-2xl font-bold">Send Message For Book</h5>
-            <input
-              type="text"
-              placeholder="Name"
-              className="border px-5 py-3 rounded-sm border-[#BCBCBC] text-mutedText"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="border px-5 py-3 rounded-sm border-[#BCBCBC] text-mutedText"
-            />
-            <textarea
-              name=""
-              id=""
-              className="border px-5 pt-[10px] pb-[63px] rounded-sm border-[#BCBCBC] text-mutedText"
-            >
-              Message
-            </textarea>
-            <button className="bg-srPrimary text-white px-8 py-3 rounded-[2px] text-base font-bold font-[Creato Display] w-fit">
-              Send Now
-            </button>
-          </div>
-
-          {
-            // top categories
-          }
-
-          <div className="shadow-md p-[30px] flex flex-col gap-y-5 w-full">
-            <h5 className="text-2xl font-bold">Top Categories</h5>
-            {categories.map((category, i) => (
-              <div key={i} className="flex gap-x-5 items-center">
-                <Image
-                  src={rightArrow}
-                  width={25}
-                  height={25}
-                  alt="right arrow"
-                />
-                <p className="font-normal text-sm">{category}</p>
-              </div>
-            ))}
-          </div>
-
-          {
-            // latest properties
-          }
-
-          <div className="shadow-md p-[30px] flex flex-col gap-y-[15px] w-full">
-            <h5 className="text-2xl font-bold">Latest Properties</h5>
-            {properties.map((property) => (
-              <div key={property.id} className="flex gap-x-[10px] items-center">
-                <Image
-                  className="lg:w-[60px] lg:h-[50px]"
-                  src={property.image}
-                  width={60}
-                  height={50}
-                  alt="property"
-                />
-                <div>
-                  <p className="font-normal text-sm">${property.price}.00</p>
-                  <p className="font-normal text-sm">{property.name}</p>
-                  <p className="font-normal text-sm">{property.location}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <CallToAction />
 
         {
           // location - tags
         }
+        <LocationAndTags />
 
-        <div className="mt-[60px]">
-          <h5 className="text-2xl font-bold mb-5">Location</h5>
-          <div className="lg:flex gap-6">
-            <div>
-              <div className="z-0 relative w-fit">
-                <Image
-                  className="rounded-md h-[300px]"
-                  src={map}
-                  width={829}
-                  height={300}
-                  alt="map"
-                />
-                <Image
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
-                  src={mapPin}
-                  width={112}
-                  height={112}
-                  alt="map-pin"
-                />
-              </div>
-            </div>
-            <div>
-              <div className="pt-5 pl-[30px] pr-[22px] pb-[23px] border mb-5 rounded">
-                <h5 className="text-2xl font-medium mb-5">Tags</h5>
-                <div className="grid grid-cols-4 gap-[10px]">
-                  {tags.map((tag, i) => (
-                    <button
-                      className="text-srPrimary text-[10px] font-normal px-5 py-[6px] border border-srPrimary rounded"
-                      key={i}
-                    >
-                      {tag}
-                    </button>
-                  ))}
-                </div>
-              </div>
-              <div className="pt-5 pl-[30px] pb-[30px] border rounded">
-                <h5 className="text-2xl font-medium mb-5">Follow us</h5>
-                <div className="flex gap-[10px]">
-                  {socialLogos.map((logo, i) => (
-                    <Image
-                      key={i}
-                      src={logo}
-                      width={40}
-                      height={40}
-                      alt="social logo"
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {
+          // reviews
+        }
+        <Review />
       </div>
     </section>
   );
