@@ -29,7 +29,7 @@ const Review = () => {
         <div key={user.id} className="flex gap-x-5 gap-y-[30px]">
           <div className="p-[5px] border border-srPrimary rounded h-fit">
             <Image
-              className="rounded-sm lg:w-[106px] lg:h-[98px]"
+              className="rounded-sm w-[106px] lg:h-[98px]"
               src={user.image}
               width={106}
               height={98}
@@ -47,6 +47,29 @@ const Review = () => {
           </div>
         </div>
       ))}
+      <div className="shadow-md p-[30px] mt-[60px] flex flex-col gap-y-5 bg-[#F0F0F0] lg:w-[550px]">
+        <h5 className="text-[28px] font-medium">Write a Review</h5>
+        <input
+          type="text"
+          placeholder="Name"
+          className="border px-5 py-3 rounded-sm border-[#BCBCBC] text-mutedText"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          className="border px-5 py-3 rounded-sm border-[#BCBCBC] text-mutedText"
+        />
+        <textarea
+          name=""
+          id=""
+          className="border px-5 pt-[10px] pb-[63px] rounded-sm border-[#BCBCBC] text-mutedText"
+        >
+          Message
+        </textarea>
+        <button className="bg-srPrimary text-white px-8 py-3 rounded-[2px] text-base font-bold font-[Creato Display] w-fit">
+          Send Now
+        </button>
+      </div>
     </div>
   );
 };
