@@ -7,8 +7,8 @@ import twitter from "@/assets/images/Twitter.png";
 import linkedin from "@/assets/images/Linkedin.png";
 import facebook from "@/assets/images/Facebook.png";
 import copyright from "@/assets/images/copyright.png";
-import map from "@/assets/images/map.png";
 import Link from "next/link";
+import map from "@/assets/images/map.png";
 import mapPin from "@/assets/images/map-pin-filled.png";
 
 const Footer = () => {
