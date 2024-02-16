@@ -62,12 +62,25 @@ const Review = () => {
         <textarea
           name=""
           id=""
-          className="border px-5 pt-[10px] pb-[63px] rounded-sm border-[#BCBCBC] text-mutedText"
+          className="border px-5 pt-[10px] pb-[10px] rounded-sm border-[#BCBCBC] text-mutedText"
         >
-          Message
+          Comment
         </textarea>
+        <div className="flex items-center gap-[5px]">
+          <input
+            className="self-start"
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            value="1"
+          />
+          <span className="text-[10px]">
+            Save my Email, Name, and website in this browser for the next time,
+            I comment
+          </span>
+        </div>
         <button className="bg-srPrimary text-white px-8 py-3 rounded-[2px] text-base font-bold font-[Creato Display] w-fit">
-          Send Now
+          Post Comment
         </button>
       </div>
     </div>
