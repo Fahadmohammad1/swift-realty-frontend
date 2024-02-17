@@ -23,7 +23,7 @@ const Review = () => {
     },
   ];
   return (
-    <div className="lg:w-[829px]">
+    <div className="lg:w-[829px] mt-[60px]">
       <h5 className="text-2xl font-bold mb-5">Reviews</h5>
       {users.map((user) => (
         <div key={user.id} className="flex gap-x-5 gap-y-[30px]">

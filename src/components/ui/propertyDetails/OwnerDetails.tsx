@@ -10,16 +10,16 @@ const OwnerDetails = () => {
       <h5 className="font-medium text-[28px]">Owner Details</h5>
       <div className="flex ">
         <div className="lg:flex gap-5 items-center">
-          <div className="border border-srPrimary w-full rounded">
+          <div className="border border-srPrimary rounded">
             <Image
-              className="p-[5px] rounded-sm w-full"
+              className="p-[5px] rounded-sm lg:w-[106px] lg:h-[98px]"
               src={owner1}
               width={106}
               height={98}
               alt="avatar"
             />
           </div>
-          <div>
+          <div className="">
             <h4 className="font-bold text-xl text-srPrimary">David Rechardo</h4>
             <p className="text-xs font-normal text-mutedText mt-[2px]">
               Traveler/Photographer
@@ -35,7 +35,7 @@ const OwnerDetails = () => {
           </div>
         </div>
         <div className="w-[1px] border mx-5" />
-        <div>
+        <div className="lg:w-[933px]">
           <p className="text-mutedText text-justify">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industrys standard dummy text

@@ -27,10 +27,10 @@ const LocationAndTags = () => {
         <div>
           <div className="z-0 relative w-fit">
             <Image
-              className="rounded-md h-[300px]"
+              className="rounded-md lg:h-[330px]"
               src={map}
               width={829}
-              height={300}
+              height={330}
               alt="map"
             />
             <Image

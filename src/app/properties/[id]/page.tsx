@@ -17,6 +17,7 @@ import PropertyCard from "@/components/ui/homepage/PropertyCard";
 import propery1 from "@/assets/images/property-1.png";
 import propery2 from "@/assets/images/property-2.png";
 import propery3 from "@/assets/images/property-3.png";
+import EmailForm from "@/components/ui/shared/EmailForm";
 
 const PropertyDetails = () => {
   const properties = [
@@ -25,7 +26,7 @@ const PropertyDetails = () => {
     { id: 3, location: "Dhaka, Bangladesh", price: 2000, image: propery3 },
   ];
   return (
-    <section>
+    <section className="pb-10">
       <DynamicBanner title="Property Details" />
       <div className="container mx-auto mt-[95px]">
         <div className="flex items-center">
@@ -119,7 +120,7 @@ const PropertyDetails = () => {
           // our latest properties
         }
 
-        <div className="mt-[100px]">
+        <div className="mt-[100px] mb-[60px]">
           <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
             Our Latest Properties
           </h1>
@@ -131,6 +132,7 @@ const PropertyDetails = () => {
           </div>
         </div>
       </div>
+      <EmailForm />
     </section>
   );
 };
