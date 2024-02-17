@@ -26,7 +26,7 @@ const Review = () => {
     <div className="lg:w-[829px] mt-[60px]">
       <h5 className="text-2xl font-bold mb-5">Reviews</h5>
       {users.map((user) => (
-        <div key={user.id} className="flex gap-x-5 gap-y-[30px]">
+        <div key={user.id} className="flex gap-x-5 items-center mb-[30px]">
           <div className="p-[5px] border border-srPrimary rounded h-fit">
             <Image
               className="rounded-sm w-[106px] lg:h-[98px]"
@@ -36,9 +36,9 @@ const Review = () => {
               alt="avatar"
             />
           </div>
-          <div>
+          <div className="lg:w-[693px]">
             <p className="font-mediam text-xl">{user.name}</p>
-            <p className="font-medium text-base text-mutedText my-[10px]">
+            <p className="font-medium text-base text-mutedText my-[9px]">
               {user.date}
             </p>
             <p className="font-normal text-xs text-mutedText text-justify">
