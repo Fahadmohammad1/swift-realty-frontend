@@ -6,6 +6,7 @@ import office from "@/assets/images/office.png";
 import villa from "@/assets/images/villa.png";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
+import EmailForm from "@/components/ui/shared/EmailForm";
 
 const ServicesPage = () => {
   const services = [
@@ -53,13 +54,13 @@ const ServicesPage = () => {
     },
   ];
   return (
-    <section>
+    <section className="pb-10">
       <DynamicBanner title="Services" />
       <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center mt-[100px]">
         Our Beaut Services
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm mb-[50px]" />
-      <div className="lg:grid grid-cols-3 container mx-auto gap-x-5 gap-y-[30px] shadow">
+      <div className="lg:grid grid-cols-3 container mx-auto gap-x-5 gap-y-[30px] shadow mb-[60px]">
         {services.map((service) => (
           <div key={service.id} className="p-[30px] border">
             <Image src={service.icon} width={80} height={80} alt="icon" />
@@ -71,14 +72,15 @@ const ServicesPage = () => {
             </p>
             <Link
               href="/"
-              className="text-base font-medium text-justify text-[#354052] inline-block"
+              className="text-base font-medium text-justify text-[#354052] flex items-center gap-x-1"
             >
-              View More
+              <span>View More</span>
               <FaArrowRightLong />
             </Link>
           </div>
         ))}
       </div>
+      <EmailForm />
     </section>
   );
 };
