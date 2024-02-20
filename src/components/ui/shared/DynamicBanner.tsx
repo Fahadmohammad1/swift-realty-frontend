@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const DynamicBanner = ({ title }: { title: string }) => {
   return (
-    <section>
+    <section className="mb-[100px]">
       <div
         style={{
           background: `linear-gradient(rgba(30, 30, 42, 1), rgba(30, 30, 42, 1)), url(${bg.src})`,
