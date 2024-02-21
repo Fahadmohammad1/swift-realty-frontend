@@ -9,7 +9,7 @@ const EmailForm = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "100%",
       }}
-      className=" bg-opacity-90"
+      className=" bg-opacity-90 mt-[60px] mb-10"
     >
       <div className="max-w-[800px] mx-auto">
         <h3 className="text-center text-white text-4xl font-bold font-[Creato Display] pt-[50px]">
