@@ -21,12 +21,12 @@ export const Header = () => {
               <Link href="/" className="text-[14px]">
                 Home
               </Link>
-              <Link href="/">Properties</Link>
-              <Link href="/">Services</Link>
-              <Link href="/">About Us</Link>
+              <Link href="/properties">Properties</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/about">About Us</Link>
               <Link href="/">Blog</Link>
-              <Link href="/">Contact Us</Link>
-              <Link href="/">FAQs</Link>
+              <Link href="/contact">Contact Us</Link>
+              <Link href="/faqs">FAQs</Link>
             </Navbar.Container>
             <Navbar.Collapse collapseType="sidebar">
               <Navbar.Container tag="ul" className="flex flex-col gap-5">
@@ -45,13 +45,13 @@ export const Header = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="border border-[#00000066] w-[200px] px-[10px] py-[7px] rounded-sm mr-[32px] text-xs"
+              className="border border-[#00000066] lg:w-[200px] hidden lg:block px-[10px] py-[7px] rounded-sm lg:mr-[32px] text-xs"
             />
 
             <button className="px-[21px] py-[7px] bg-white border border-srPrimary text-srPrimary rounded-sm text-[10px] font-medium">
               Log in
             </button>
-            <button className="px-[21px] py-[8px] bg-srPrimary text-white rounded-sm text-[10px] font-medium">
+            <button className="px-[21px] py-[8px] bg-srPrimary text-white rounded-sm text-[10px] font-medium hidden lg:block">
               Newsletter
             </button>
             <Navbar.Toggle />

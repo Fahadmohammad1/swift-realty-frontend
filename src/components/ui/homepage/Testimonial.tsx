@@ -12,7 +12,7 @@ const Testimonial = () => {
         Testimonial
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
-      <div className="mt-[50px] lg:flex w-[1215px] mx-auto">
+      <div className="mt-[50px] lg:flex lg:w-[1215px] mx-auto">
         <div
           style={{ borderRadius: "0px 30px 0px 30px" }}
           className="border-2 border-srPrimary w-max"
@@ -26,7 +26,7 @@ const Testimonial = () => {
             alt="user"
           />
         </div>
-        <div className="w-[865px] ml-[30px]">
+        <div className="lg:w-[865px] ml-[30px]">
           <h4 className="text-[28px] font-bold font-[Creato Display]">
             M.S Rehmatul Alamin <span className="text-slate-400">|</span>{" "}
             <span className="text-srPrimary">(5.0)</span>
