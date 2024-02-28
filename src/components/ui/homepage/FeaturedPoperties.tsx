@@ -12,7 +12,7 @@ const FeaturedPoperties = () => {
   ];
   return (
     <section className="mt-[60px] lg:mt-[100px] container mx-auto px-5 lg:px-0">
-      <h1 className="text-2xl lg:text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
+      <h1 className="text-3xl lg:text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Featured Properties
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm mb-[50px]" />
