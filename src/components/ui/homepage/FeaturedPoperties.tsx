@@ -11,8 +11,8 @@ const FeaturedPoperties = () => {
     { id: 3, location: "Dhaka, Bangladesh", price: 2000, image: propery3 },
   ];
   return (
-    <section className="mt-[100px] container mx-auto">
-      <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
+    <section className="mt-[60px] lg:mt-[100px] container mx-auto px-5 lg:px-0">
+      <h1 className="text-2xl lg:text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Featured Properties
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm mb-[50px]" />
@@ -22,7 +22,7 @@ const FeaturedPoperties = () => {
         ))}
       </div>
       <div className="w-full flex justify-center mt-[40px]">
-        <button className="bg-srPrimary text-white px-[49px] py-5 rounded-[2px] text-base font-extrabold font-[Creato Display] self-center">
+        <button className="bg-srPrimary text-white lg:px-[49px] lg:py-5 rounded-[2px] text-base font-extrabold font-[Creato Display] self-center px-[18px] py-2">
           View All
         </button>
       </div>
