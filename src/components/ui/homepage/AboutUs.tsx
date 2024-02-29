@@ -11,8 +11,8 @@ const AboutUs = () => {
     { id: "4", icon: check, text: "Easy Payment System" },
   ];
   return (
-    <section className="container mx-auto mt-[100px]">
-      <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
+    <section className="container mx-auto mt-[100px] px-5 lg:px-0">
+      <h1 className="text-2xl lg:text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         About Us
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
@@ -28,7 +28,7 @@ const AboutUs = () => {
           />
         </div>
         <div>
-          <h5 className="text-4xl font-bold font-[Creato Display] mt-5">
+          <h5 className="text-2xl lg:text-4xl font-bold font-[Creato Display] mt-5">
             Experts Forecasts And Insights Expected Trends
           </h5>
           <p className="mt-[10px]">
@@ -45,12 +45,12 @@ const AboutUs = () => {
                 height={26}
                 alt="circle-check"
               />
-              <p className="font-normal text-xl font-[Creato Display]">
+              <p className="font-normal text-base lg:text-xl font-[Creato Display]">
                 {data.text}
               </p>
             </div>
           ))}
-          <button className="bg-srPrimary text-white py-5 text-base font-extrabold font-[Creato Display] px-[42px] rounded-sm mt-[50px]">
+          <button className="bg-srPrimary text-white lg:py-5 py-2 text-base lg:font-extrabold font-bold font-[Creato Display] lg:px-[42px] px-[18px] rounded-sm mt-[50px] block mx-auto">
             More Details
           </button>
         </div>
