@@ -21,7 +21,7 @@ const EmailForm = () => {
           </button>
           <input
             type="text"
-            placeholder="Your Email Address....."
+            placeholder="Your Email Address...."
             className="w-full p-5 text-[#BCBCBC] text-lg lg:text-2xl font-normal font-[Inter] rounded italic"
           />
         </div>

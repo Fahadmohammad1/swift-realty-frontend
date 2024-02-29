@@ -7,7 +7,7 @@ import { Rating } from "keep-react";
 
 const Testimonial = () => {
   return (
-    <section className="container mx-auto mt-[100px]">
+    <section className="container mx-auto mt-[100px] px-5 lg:px-0">
       <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Testimonial
       </h1>
