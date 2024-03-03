@@ -44,13 +44,13 @@ const LatestBlog = () => {
     },
   ];
   return (
-    <section className="mt-[100px]">
-      <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
+    <section className="mt-[70px] lg:mt-[100px] px-5 lg:px-0">
+      <h1 className="text-2xl lg:text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Latest Blog From Us
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
 
-      <div className=" mx-auto h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
+      <div className="mx-auto lg:h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
         <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
           <button
             onClick={prevSlider}
@@ -105,7 +105,7 @@ const LatestBlog = () => {
         </div>
 
         <div
-          className="h-[540px] md:h-[670px] w-2/3 ml-auto relative ease-linear duration-300 flex items-center"
+          className="h-[540px] md:h-[670px] lg:w-2/3 ml-auto relative ease-linear duration-300 flex items-center"
           style={{ transform: `translateX(-${currentSlider * 50}%)` }}
         >
           {blogs.map((blog, inx) => (

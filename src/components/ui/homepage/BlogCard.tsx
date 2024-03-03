@@ -10,7 +10,7 @@ const BlogCard = ({ blog }: { blog: IBlog }) => {
         width={405}
         height={330}
         alt="Product Image"
-        className="w-[405px] h-[330px] rounded-t-xl"
+        className="lg:w-[405px] lg:h-[330px] rounded-t-xl"
         src={image}
       />
       <div className="pl-[30px] pt-[10px] pb-[22px]">

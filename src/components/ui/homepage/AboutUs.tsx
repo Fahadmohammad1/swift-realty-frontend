@@ -11,7 +11,7 @@ const AboutUs = () => {
     { id: "4", icon: check, text: "Easy Payment System" },
   ];
   return (
-    <section className="container mx-auto mt-[100px] px-5 lg:px-0">
+    <section className="container mx-auto lg:mt-[100px] mt-[70px] px-5 lg:px-0">
       <h1 className="text-2xl lg:text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         About Us
       </h1>

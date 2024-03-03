@@ -16,7 +16,7 @@ const TeamInfo = () => {
     },
   ];
   return (
-    <section className="container mx-auto mt-[100px] px-5 lg:px-0">
+    <section className="container mx-auto lg:mt-[100px] px-5 lg:px-0 mt-[70px]">
       <h1 className="text-2xl lg:text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
         Meet Our Team
       </h1>

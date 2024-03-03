@@ -7,31 +7,31 @@ import { Rating } from "keep-react";
 
 const Testimonial = () => {
   return (
-    <section className="container mx-auto mt-[100px] px-5 lg:px-0">
-      <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
+    <section className="container mx-auto mt-[70px] lg:mt-[100px] px-5 lg:px-0">
+      <h1 className="lg:text-4xl text-2xl font-bold font-[Creato Display] text-srSecondary text-center">
         Testimonial
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
       <div className="mt-[50px] lg:flex lg:w-[1215px] mx-auto">
         <div
           style={{ borderRadius: "0px 30px 0px 30px" }}
-          className="border-2 border-srPrimary w-max"
+          className="border-2 border-srPrimary lg:w-max"
         >
           <Image
             style={{ borderRadius: "0px 30px 0px 30px" }}
-            className="px-[10px] py-2 h-full"
+            className="px-[10px] py-2 h-full mx-auto"
             src={user}
             width={300}
             height={283}
             alt="user"
           />
         </div>
-        <div className="lg:w-[865px] ml-[30px]">
-          <h4 className="text-[28px] font-bold font-[Creato Display]">
+        <div className="lg:w-[865px] lg:ml-[30px] mt-5 lg:mt-0">
+          <h4 className="lg:text-[28px] text-xl  font-bold font-[Creato Display]">
             M.S Rehmatul Alamin <span className="text-slate-400">|</span>{" "}
             <span className="text-srPrimary">(5.0)</span>
           </h4>
-          <p className="text-[20px] font-normal font-[Creato Display] text-justify mt-[10px]">
+          <p className="lg:text-[20px] text-[15px] font-normal font-[Creato Display] text-justify mt-[10px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
