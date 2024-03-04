@@ -22,11 +22,11 @@ const Footer = () => {
           backgroundPosition: "cover",
           backgroundSize: "100%",
         }}
-        className="bg-opacity-90 flex justify-evenly items-center pt-[106px] pb-[70px]"
+        className="bg-opacity-90 flex lg:flex-row flex-col lg:justify-evenly justify-center items-center lg:pt-[106px] pt-[50px] pb-[35px] lg:pb-[70px] px-5"
       >
-        <div className="w-[302px]">
+        <div className="lg:w-[302px] text-center lg:text-left flex flex-col lg:block justify-center">
           <Image
-            className="mb-5"
+            className="mb-5 mx-auto lg:mx-0"
             src={logo}
             width={240}
             height={38}
@@ -36,7 +36,7 @@ const Footer = () => {
             We are term of designers and developers create high quality Magento,
             Presentation.
           </p>
-          <div className="flex gap-[10px]">
+          <div className="flex gap-[10px] justify-center lg:justify-start mt-2 lg:mt-0">
             {socialLogos.map((logo, i) => (
               <Image
                 key={i}
@@ -48,7 +48,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col text-white">
+        <div className="flex flex-col text-white mt-5 lg:mt-0 text-center lg:text-start">
           <p className="text-base font-bold mb-4 inline">Useful Links</p>
           <Link href="/" className="mb-3 text-base">
             About
@@ -67,7 +67,7 @@ const Footer = () => {
           </Link>
           <Link href="/">Services</Link>
         </div>
-        <div className="flex flex-col text-white">
+        <div className="flex flex-col text-white mt-5 lg:mt-0 text-center lg:text-start">
           <p className="text-base font-bold mb-4">Help?</p>
           <Link href="/" className="mb-[10px]">
             FAQs
@@ -86,7 +86,7 @@ const Footer = () => {
           </Link>
           <Link href="/">Privacy</Link>
         </div>
-        <div className="z-0 relative">
+        <div className="z-0 relative mt-5 lg:mt-0">
           <Image
             className="rounded-md h-56"
             src={map}
@@ -103,7 +103,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="bg-white flex justify-between py-[18px] px-[93px]">
+      <div className="bg-white flex justify-between lg:py-[18px] px-[93px]">
         <span className="flex gap-1 items-center">
           {" "}
           <Image src={copyright} width={16} height={16} alt="copyright logo" />
