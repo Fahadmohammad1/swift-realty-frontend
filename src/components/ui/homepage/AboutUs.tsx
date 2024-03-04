@@ -50,7 +50,7 @@ const AboutUs = () => {
               </p>
             </div>
           ))}
-          <button className="bg-srPrimary text-white lg:py-5 py-2 text-base lg:font-extrabold font-bold font-[Creato Display] lg:px-[42px] px-[18px] rounded-sm mt-[50px] block mx-auto">
+          <button className="bg-srPrimary text-white lg:py-5 py-2 text-base lg:font-extrabold font-bold font-[Creato Display] lg:px-[42px] px-[18px] rounded-sm mt-[50px]">
             More Details
           </button>
         </div>

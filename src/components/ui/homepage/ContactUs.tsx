@@ -14,14 +14,14 @@ const ContactUs = () => {
     { id: "4", text: "Feel free to chat with us", icon: chat },
   ];
   return (
-    <section className="mt-[50px] container mx-auto mb-[60px]">
-      <h1 className="text-4xl font-bold font-[Creato Display] text-srSecondary text-center">
+    <section className="lg:mt-[50px] container mx-auto mb-[60px] px-5 lg:px-0">
+      <h1 className="lg:text-4xl text-2xl font-bold font-[Creato Display] text-srSecondary text-center">
         Contact Us
       </h1>
       <div className="w-[100px] border-[2px] border-srPrimary mx-auto mt-4 rounded-sm" />
-      <div className="lg:grid grid-cols-2 mt-[80px] gap-[40px]">
+      <div className="lg:grid grid-cols-2 lg:mt-[80px] mt-10 gap-[40px]">
         <div>
-          <h3 className="text-4xl font-bold font-[Creato Display]">
+          <h3 className="lg:text-4xl text-2xl font-bold font-[Creato Display]">
             Easy to contact with us
           </h3>
           <p className="mt-[10px] text-justify text-[#757575]">
@@ -43,12 +43,12 @@ const ContactUs = () => {
               </button>
             </div>
           ))}
-          <button className="bg-srPrimary text-white py-5 text-base font-extrabold font-[Creato Display] px-[40px] rounded-sm mt-[40px]">
+          <button className="bg-srPrimary text-white lg:py-5 py-2 text-base font-extrabold font-[Creato Display] lg:px-[40px] px-5 rounded-sm mt-[40px]">
             Contact Now
           </button>
         </div>
 
-        <div>
+        <div className="mt-5 lg:mt-0">
           <Image
             className="h-full"
             style={{ borderRadius: "80px 0px 80px 0px" }}
