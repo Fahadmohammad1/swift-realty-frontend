@@ -13,7 +13,7 @@ const ProfileCard = ({ member }: { member: IMember }) => {
         className="w-[405px] h-[330px] rounded-t-xl"
         src={image}
       />
-      <div className="pl-[30px] pt-[10px] pb-[13px]">
+      <div className="lg:pl-[30px] pt-[10px] pb-[13px] text-center lg:text-left">
         <h6 className="text-srPrimary text-xl font-bold font-[Creato Display]">
           {name}
         </h6>
