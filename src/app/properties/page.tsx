@@ -29,7 +29,7 @@ const PropertiesPage = () => {
   return (
     <section className="mb-[40px]">
       <DynamicBanner title="Properties" />
-      <div className="container mx-auto lg:mt-[100px] mb-[60px]">
+      <div className="container mx-auto lg:mt-[100px] mb-[60px] px-5 lg:px-0">
         <div className="lg:flex justify-between items-center">
           <p className="text-2xl text-center lg:text-left">
             Showing 12 results
@@ -45,17 +45,19 @@ const PropertiesPage = () => {
             >
               <Dropdown.Item>Popular</Dropdown.Item>
             </Dropdown>
-            <FaHeart className="w-8 h-8" />
-            <IoSearchSharp className="w-8 h-8" />
-            <VscSettings className="w-8 h-8" />
+            <FaHeart className="lg:w-8 lg:h-8" />
+            <IoSearchSharp className="lg:w-8 lg:h-8" />
+            <VscSettings className="lg:w-8 lg:h-8" />
           </div>
         </div>
-        <div className="lg:grid grid-cols-3 gap-x-5 gap-y-[32px] mt-[43px] px-5 lg:px-0">
+        <div className="lg:grid grid-cols-3 gap-x-5 gap-y-[32px] lg:mt-[43px] mt-5">
           {properties.map((property) => (
             <PropertyCard key={property.id} property={property} />
           ))}
         </div>
-        <p className="text-[#757575] text-2xl mt-[30px]">Showing all results</p>
+        <p className="text-[#757575] lg:text-2xl mt-[30px] lg:text-left text-center">
+          Showing all results
+        </p>
       </div>
       <EmailForm />
     </section>
