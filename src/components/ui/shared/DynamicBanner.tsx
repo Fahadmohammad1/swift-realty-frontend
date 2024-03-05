@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const DynamicBanner = ({ title }: { title: string }) => {
   return (
-    <section className="mb-[100px]">
+    <section className="lg:mb-[100px] mb-[50px]">
       <div
         style={{
           background: `linear-gradient(rgba(30, 30, 42, 1), rgba(30, 30, 42, 1)), url(${bg.src})`,
@@ -14,12 +14,12 @@ const DynamicBanner = ({ title }: { title: string }) => {
         }}
         className="bg-opacity-90"
       >
-        <div className="flex justify-between lg:h-[400px] container mx-auto">
-          <div className="h-full flex flex-col justify-center ">
-            <h1 className="font-bold text-[64px] text-white font-[Creato Display]">
+        <div className="lg:flex justify-between lg:h-[400px] container mx-auto">
+          <div className="h-full flex flex-col justify-center text-center lg:text-left py-5 lg:py-0">
+            <h1 className="font-bold lg:text-[64px] text-[28px] text-white font-[Creato Display]">
               {title}
             </h1>
-            <p className="text-white text-2xl">Home | {title}</p>
+            <p className="text-white lg:text-2xl">Home | {title}</p>
           </div>
           <div className="h-full flex items-end">
             <Image

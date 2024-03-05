@@ -103,7 +103,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="bg-white flex justify-between lg:py-[18px] px-[93px]">
+      <div className="bg-white flex justify-between lg:py-[18px] lg:px-[93px] px-5">
         <span className="flex gap-1 items-center">
           {" "}
           <Image src={copyright} width={16} height={16} alt="copyright logo" />

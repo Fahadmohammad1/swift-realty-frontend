@@ -29,9 +29,11 @@ const PropertiesPage = () => {
   return (
     <section className="mb-[40px]">
       <DynamicBanner title="Properties" />
-      <div className="container mx-auto mt-[100px] mb-[60px]">
-        <div className="flex justify-between items-center">
-          <p className="text-2xl">Showing 12 results</p>
+      <div className="container mx-auto lg:mt-[100px] mb-[60px]">
+        <div className="lg:flex justify-between items-center">
+          <p className="text-2xl text-center lg:text-left">
+            Showing 12 results
+          </p>
           <div className="flex items-center gap-8">
             <Dropdown
               label="Popular"
@@ -48,7 +50,7 @@ const PropertiesPage = () => {
             <VscSettings className="w-8 h-8" />
           </div>
         </div>
-        <div className="lg:grid grid-cols-3 gap-x-5 gap-y-[32px] mt-[43px]">
+        <div className="lg:grid grid-cols-3 gap-x-5 gap-y-[32px] mt-[43px] px-5 lg:px-0">
           {properties.map((property) => (
             <PropertyCard key={property.id} property={property} />
           ))}
