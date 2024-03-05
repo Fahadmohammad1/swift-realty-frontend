@@ -12,26 +12,26 @@ const AboutPage = () => {
       <div className="container mx-auto">
         <AboutUs />
 
-        <div className="my-[100px] lg:grid grid-cols-3">
-          <div className="text-center border-r-2">
-            <p className="text-srPrimary font-bold text-[94px] leading-none">
+        <div className="lg:my-[100px] my-[70px] lg:grid grid-cols-3 ">
+          <div className="text-center lg:border-r-2 mb-5 lg:mb-0">
+            <p className="text-srPrimary font-bold lg:text-[94px] text-6xl leading-none">
               150+
             </p>
-            <p className="font-normal text-2xl">Happy Customers in 2023</p>
+            <p className="font-normal lg:text-2xl">Happy Customers in 2023</p>
           </div>
 
-          <div className="text-center border-r-2">
-            <p className="text-srPrimary font-bold text-[94px] leading-none">
+          <div className="text-center border-r-2 mb-5 lg:mb-0">
+            <p className="text-srPrimary font-bold lg:text-[94px] text-6xl leading-none">
               140+
             </p>
-            <p className="font-normal text-2xl">Completed Project</p>
+            <p className="font-normal lg:text-2xl">Completed Project</p>
           </div>
 
           <div className="text-center">
-            <p className="text-srPrimary font-bold text-[94px] leading-none">
+            <p className="text-srPrimary font-bold lg:text-[94px] text-6xl leading-none">
               100+
             </p>
-            <p className="font-normal text-2xl">Our Talented Team Member</p>
+            <p className="font-normal lg:text-2xl">Our Talented Team Member</p>
           </div>
         </div>
 
