@@ -10,12 +10,12 @@ const ContactPage = () => {
     <section>
       <DynamicBanner title="Contact Us" />
 
-      <div className="mt-[95px] container mx-auto grid grid-cols-2 gap-x-[50px]">
-        <div className="">
-          <h2 className="text-5xl font-bold mb-[55px]">
+      <div className="lg:mt-[95px] container mx-auto lg:grid grid-cols-2 gap-x-[50px] px-5 lg:px-0">
+        <div className="mb-10 lg:mb-0">
+          <h2 className="lg:text-5xl text-2xl font-bold mb-[55px]">
             Feel free to contact with us for any query.
           </h2>
-          <div className="flex gap-x-[15px] items-center pl-5 pt-[23px] pb-[23px] bg-[#F3F2F2] rounded-r-full w-[369px]">
+          <div className="flex gap-x-[15px] items-center pl-5 pt-[23px] pb-[23px] bg-[#F3F2F2] rounded-r-full lg:w-[369px]">
             <div className="p-[10px] bg-srPrimary w-fit rounded">
               <FiPhoneCall className="text-[34px] text-white" />
             </div>
@@ -24,7 +24,7 @@ const ContactPage = () => {
               <p className="text-xs font-normal">Head Office. (210) 123 - 23</p>
             </div>
           </div>
-          <div className="flex gap-x-[15px] items-center pl-5 pt-[23px] pb-[23px] w-[369px] rounded-r-full mt-5 border border-[#BCBCBC]">
+          <div className="flex gap-x-[15px] items-center pl-5 pt-[23px] pb-[23px] lg:w-[369px] rounded-r-full mt-5 border border-[#BCBCBC]">
             <div className="p-[10px] bg-srPrimary w-fit rounded">
               <HiOutlineMailOpen className="text-[34px] text-white" />
             </div>
@@ -33,7 +33,7 @@ const ContactPage = () => {
               <p className="text-xs font-normal">swiftrealty@gmail.com</p>
             </div>
           </div>
-          <div className="flex gap-x-[15px] items-center pl-5 pt-[23px] pb-[23px] rounded-r-full w-[369px] mt-5 border border-[#BCBCBC]">
+          <div className="flex gap-x-[15px] items-center pl-5 pt-[23px] pb-[23px] rounded-r-full lg:w-[369px] mt-5 border border-[#BCBCBC]">
             <div className="p-[10px] bg-srPrimary w-fit rounded">
               <TbMap2 className="text-[34px] text-white" />
             </div>
@@ -45,7 +45,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-[#F3F2F2] px-[30px] py-10">
+        <div className=" bg-[#F3F2F2] lg:px-[30px] px-4 py-10">
           <input
             className="p-5 bg-transparent border w-full border-mutedText"
             type="text"
@@ -83,7 +83,7 @@ const ContactPage = () => {
           >
             Write Message
           </textarea>
-          <button className="mt-[30px] bg-srPrimary px-[30px] py-[15px] rounded-sm">
+          <button className="mt-[30px] bg-srPrimary lg:px-[30px] px-[18px] lg:py-[15px] py-2 rounded-sm">
             Submit Request
           </button>
         </div>
