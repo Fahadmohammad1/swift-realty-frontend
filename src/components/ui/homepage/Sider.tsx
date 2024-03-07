@@ -1,6 +1,6 @@
 "use client";
 import { Sidebar } from "keep-react";
-import logo from "../../assets/images/Logo.png";
+import logo from "@/assets/images/Logo.png";
 import {
   Chat,
   Handbag,
@@ -15,7 +15,7 @@ import {
 export const Sider = () => {
   return (
     <Sidebar aria-label="Sidebar with multi-level dropdown example">
-      <Sidebar.Logo href="" img={`${logo}`} imgAlt="swift realty" />
+      <Sidebar.Logo href="" img={`${logo.src}`} imgAlt="swift realty" />
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           <Sidebar.Item href="#" icon={<SquaresFour size={24} />}>
