@@ -10,7 +10,7 @@ import WhyChooseUs from "@/components/ui/homepage/WhyChooseUs";
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <div className="container mx-auto">
         <Banner />
       </div>
@@ -22,6 +22,6 @@ export default function Home() {
       <AboutUs />
       <LatestBlog />
       <ContactUs />
-    </main>
+    </div>
   );
 }
