@@ -21,3 +21,8 @@ export interface IBlog {
   description: string;
   image: StaticImageData;
 }
+
+export interface SidebarProps {
+  isOpen: boolean;
+  toggleSidebar: () => void;
+}

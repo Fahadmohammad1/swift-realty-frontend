@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import { Sider } from "@/components/ui/homepage/Sider";
+import { Sider } from "@/components/ui/dashboard/Sider";
 
 export const metadata: Metadata = {
   title: "Swift Realty",
@@ -15,8 +15,7 @@ export default function DashboardLayout({
   return (
     <html lang="en">
       <body>
-        <Sider />
-        {children}
+        <Sider>{children}</Sider>
       </body>
     </html>
   );
